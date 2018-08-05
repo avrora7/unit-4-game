@@ -69,29 +69,3 @@ $(document).ready(function() {
 
 
 
-
-/*
-    $("#compChoice").html(randomNumberGenerator(120, 19))
-    $("#fox").on('click', function() {
-        $("#fox").val(animalRandomNumber[0]);
-        console.log(animalRandomNumber[0]);
-    })*/
-
-/*
-function randomNumberGenerator(max, min) {
-    return Math.floor(Math.random()*(max-min+1)+ min);
-}
-
-var animalRandomNumber = []
-for (var i=0; i<5; i++) {
-    var randNum = randomNumberGenerator(12, 1)
-    if (animalRandomNumber.includes(randNum)) {
-        console.log("Number already used");
-
-    }
-    else {
-        animalRandomNumber.push(randNum)
-    }
-    console.log(animalRandomNumber);
-}
-*/
