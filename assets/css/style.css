@@ -16,15 +16,19 @@ h1, div {
     margin: 10px;
   }
 
+#instructions {
+    
+}
+
  #compChoice,
  #totalScore {
-     height: 150px;
+     height: 50px;
      font-size: 26px;
      background-color: rgb(176, 113, 235);
  }
 
  #gameStats {
-    height: 150px;
+    height: 50px;
     font-size: 18px;
     background-color: rgb(177, 245, 19);
  }
