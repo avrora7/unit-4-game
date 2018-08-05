@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Anime Game</title>
+    <title>Animal Collector Game</title>
 
-  <!-- Added link to reset css and style css -->
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
- 
-  <!-- Added link to jQuery library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
- <!-- Added link to javascript -->
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
 
 </head>
+
 <body>
+    <div class="backgroundImage"></div>
+    <div class="container">
+        <h1>Animal Collector Game</h1>
 
-<div class="container">
-    <h1>Anime Game</h1>
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <p>You will be given a Target Score chosen as a random number at the start of the game.</p>
 
-    <div id="instructions"><h2>Game Instructions</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        
-        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            <p>There are four animals below. <br> By clicking on an animal you will add a specific amount of points to your Total
+                Score. </p>
 
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-        
-        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p> 
+            <p>You win the game by matching Your Total Score to the Target Score. <br> You lost the game if Your Total Score goes
+                above the Target Score.</p>
+
+            <p>The value of each animal is hidden from you until you click on it.</p>
+        </div>
+
+        <div id="compChoice">
+            <h2>Target Score:
+                <span id="screenScore"></span>
+            </h2>
+        </div>
+        <div id="gameStats">
+            <h2> Your wins:
+                <span id="wins"></span>
+            </h2>
+            &nbsp; &nbsp; &nbsp;
+            <h2> Your losses:
+                <span id="losses"></span>
+            </h2>
+        </div>
+
+        <div id="animeBtns">
+            <img id="btn0" class="anime-image" src="assets/images/cat.jpg">
+            <img id="btn1" class="anime-image" src="assets/images/badger.jpg">
+            <img id="btn2" class="anime-image" src="assets/images/fox.jpg">
+            <img id="btn3" class="anime-image" src="assets/images/puppy.jpg">
+        </div>
+
+        <div id="totalScore">
+            <h2>Your Total Score:
+                <span id="yourScore"></span>
+            </h2>
+        </div>
+
     </div>
-
-    <div id="compChoice">1</div>
-    <div id="gameStats">
-        <h2> Wins: <span id="wins"></span></h2>
-        <div> Losses: <span id="losses"></span></div>
-    </div>
-
-    <div id="animeBtns">
-        <img id="btn0" class="anime-image" src="assets/images/fox.jpg">
-        <img id="btn1" class="anime-image" src="assets/images/badger.jpg">
-        <img id="btn2" class="anime-image" src="assets/images/puppy.jpg">
-        <img id="btn3" class="anime-image" src="assets/images/shark.jpg">
-    </div>
-
-
-    <div id="totalScore">4</div>
-</div>
 
 </body>
 

@@ -1,10 +1,43 @@
 .container {
-    width: 950px;
-    margin: auto;
+    margin: 0 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-h1, div {
+.backgroundImage {
+    background-image: url("../images/backdrop.jpeg");
+    opacity: 0.1;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+}
+    
+h1 {
     text-align: center;
+    font-size: 45px;
+    font-family: 'Luckiest Guy', cursive;
+    color: maroon;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    font-family: 'Luckiest Guy', cursive;
+    display: inline;
+    margin: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .anime-image {
@@ -12,27 +45,48 @@ h1, div {
     height: 180px;
     border-style: groove;
     border-width: 15px;
-    border-color: rgb(187, 187, 243);
+    border-color: rgb(238, 226, 218);
     margin: 10px;
-  }
-
-#instructions {
-    
+    cursor: pointer;
 }
 
- #compChoice,
- #totalScore {
-     height: 50px;
-     font-size: 26px;
-     background-color: rgb(176, 113, 235);
- }
+.anime-image:hover {
+    opacity: 0.8;
+}
 
- #gameStats {
-    height: 50px;
+#instructions {
+    text-align: center;
+}
+
+#compChoice,
+#totalScore {
+    width: 280px;
+    font-size: 26px;
+    background-color: rgb(214, 192, 236);
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    padding: 25px;
+    margin: auto;
+}
+
+#gameStats {
+    width: 420px;
     font-size: 18px;
-    background-color: rgb(177, 245, 19);
- }
+    background-color: rgb(229, 186, 211);
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    padding: 25px;
+    margin: auto;
+}
 
- #animeBtns {
-    
- }
+#gameStats,
+#compChoice  {
+    margin-top: 10px;
+}
+
+#animeBtns {
+    width: 950px;
+    margin: auto;
+}

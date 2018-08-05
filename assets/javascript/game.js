@@ -42,10 +42,10 @@ let displayValue = function(place, value) {
 }
 
 let displayAllValues = function () {
-    displayValue("compChoice", compChoice);
+    displayValue("screenScore", compChoice);
     displayValue("wins", wins);
     displayValue("losses", losses);
-    displayValue("totalScore", totalScore);
+    displayValue("yourScore", totalScore);
 }
 
 $(document).ready(function() {
